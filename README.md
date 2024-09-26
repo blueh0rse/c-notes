@@ -1,19 +1,11 @@
-# C Notes
+# Learn C
 
-Personal notes on the C programming language.
+All my little projects and notes done while learning the C language.
 
-## Synthax
+## Notes
 
-Minimal code:
+- [Basic notes](./notes.md)
 
-````c
-#include <stdio.h>      // header file for compilation
-#include <stdlib.h>     // header file for compilation
+## Projects
 
-int main(int argc, char *argv[])
-{
-    printf("Hello world!\n");
-    return 0;
-}
-````
-
+- [Simple calc](./simple_calc/simple_calc.md): A simple program performing basic operations on two given numbers
