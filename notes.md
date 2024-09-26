@@ -27,52 +27,89 @@ Header file including functions:
 
 ### Types
 
-https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/7669586-declarez-des-variables
+| Name          | Minimum           | Maximum          |
+| ------------- | ----------------- | ---------------- |
+| `signed char` | -128              | 127              |
+| `int`         | -32 768           | 32 767           |
+| `long`        | -2 147 483 648    | 2 147 483 647    |
+| `float`       | 1.17549 × 10^-38  | 3.40282 × 10^38  |
+| `double`      | 2.22507 × 10^-308 | 1.79769 × 10^308 |
 
-Tableau signed
 
-Tableau unsigned
+| Name            | Minimum | Maximum       |
+| --------------- | ------- | ------------- |
+| `unsigned char` | 0       | 255           |
+| `unsigned int`  | 0       | 65 535        |
+| `unsigned long` | 0       | 4 294 967 295 |
 
+
+### Initialisation
+
+Declaring and assigning a variable in two steps:
+
+```c
 int myNumber;
-
-
-
 myNumber = 1;
+```
 
-The best is to assign a value at initialization:
+Preferred way to initialize with assignment:
 
+```c
 int myNumber = 1;
+```
 
-Create constant:
+Creating a constant:
 
+```c
 int MY_CONST = 2;
+```
 
-Tableau affichage variable
+### Display
 
+Using ``printf`` to display variables based on their type:
+
+| Format  | Type attendu   |
+| ------- | -------------- |
+| `"%d"`  | `int`          |
+| `"%u"`  | `unsigned int` |
+| `"%ld"` | `long`         |
+| `"%f"`  | `float`        |
+| `"%f"`  | `double`       |
+
+```c
 printf("Your number is: %d", myNumber);
-
 printf("Your number is: %d\n", myNumber);
-
 printf("Your number is %d and mine is %d", myNumber, MY_CONST);
-
+```
 
 ## User Input
 
+Prompting user for input:
+
+```c
 int age = 0;
 scanf("%d", &age);
+```
 
-To get a float use %f but for double use %lf
+> Note: To get a float use ``%f`` but for double use ``%lf``
 
 ## Maths
 
+Basic mathematical operations:
+
+```c
 int resultat = 0;
 resultat = 5 + 3;
 resultat = 5 - 3;
 resultat = 5 * 3;
 resultat = 5 / 3;
 resultat = 5 % 3;
+```
 
+For floating-point division:
+
+```c
 double resultat = 0;
-    
 resultat = 5.0 / 2.0;
 printf ("5 / 2 = %lf", resultat);
+```
