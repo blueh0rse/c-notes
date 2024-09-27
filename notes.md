@@ -6,7 +6,7 @@ Personal notes on the C programming language.
 
 Minimal code:
 
-````c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,13 +15,13 @@ int main(int argc, char *argv[])
     printf("Hello world!\n");
     return 0;
 }
-````
+```
 
 Header file including functions:
 
-````c
+```c
 #include <file.h>
-````
+```
 
 ## Variables
 
@@ -35,13 +35,11 @@ Header file including functions:
 | `float`       | 1.17549 × 10^-38  | 3.40282 × 10^38  |
 | `double`      | 2.22507 × 10^-308 | 1.79769 × 10^308 |
 
-
 | Name            | Minimum | Maximum       |
 | --------------- | ------- | ------------- |
 | `unsigned char` | 0       | 255           |
 | `unsigned int`  | 0       | 65 535        |
 | `unsigned long` | 0       | 4 294 967 295 |
-
 
 ### Initialisation
 
@@ -66,7 +64,7 @@ int MY_CONST = 2;
 
 ### Display
 
-Using ``printf`` to display variables based on their type:
+Using `printf` to display variables based on their type:
 
 | Format  | Type attendu   |
 | ------- | -------------- |
@@ -91,7 +89,7 @@ int age = 0;
 scanf("%d", &age);
 ```
 
-> Note: To get a float use ``%f`` but for double use ``%lf``
+> Note: To get a float use `%f` but for double use `%lf`
 
 ## Maths
 
