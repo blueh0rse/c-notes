@@ -98,18 +98,46 @@ scanf("%d", &age);
 Basic mathematical operations:
 
 ```c
-int resultat = 0;
-resultat = 5 + 3;
-resultat = 5 - 3;
-resultat = 5 * 3;
-resultat = 5 / 3;
-resultat = 5 % 3;
+int results = 0;
+results = 5 + 3;
+results = 5 - 3;
+results = 5 * 3;
+results = 5 / 3;
+results = 5 % 3;
 ```
 
 For floating-point division:
 
 ```c
-double resultat = 0;
-resultat = 5.0 / 2.0;
-printf ("5 / 2 = %lf", resultat);
+double results = 0;
+results = 5.0 / 2.0;
+printf ("5 / 2 = %lf", results);
+```
+
+### Incrementation
+
+Instead of:
+
+```c
+results = results + 1;
+results = results - 1;
+```
+
+Use:
+
+```c
+results++
+results--
+```
+
+### Other
+
+```c
+int number = 2;
+
+number += 4; // 6
+number -= 3; // 3
+number *= 5; // 15
+number /= 3; // 5
+number %= 3; // 2 (5=1*3+2)
 ```
