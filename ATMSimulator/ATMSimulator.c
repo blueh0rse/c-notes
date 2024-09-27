@@ -41,22 +41,41 @@ int main(int argc, char *argv[])
         }
         else
         {
-            printf("Done! Previous balance: %f\n", balance);
+            printf("Done!\n");
+            printf("Previous balance: %f\n", balance);
             balance -= withdraw;
-            printf("Done! Current balance: %f\n", balance);
+            printf("Current balance: %f\n", balance);
         }
-
         break;
     case 3:
         printf("\n* DEPOSIT *\n\n");
+        int deposit = 5;
+
+        printf("Amount: ");
+        scanf("%d", &deposit);
+
+        if (deposit < 5)
+        {
+            printf("Error! Cannot deposit less than 5.\n");
+        }
+        else if (deposit + balance > 100000)
+        {
+            printf("Error! Too much money in this account.\n");
+        }
+        else
+        {
+            printf("Done!\n");
+            printf("Previous balance: %f\n", balance);
+            balance += deposit;
+            printf("Current balance: %f\n", balance);
+        }
         break;
     case 4:
         printf("\n* LOGOUT *\n\n");
-        break;
+        return 0;
     default:
         printf("* NOT VALID *\n\n");
         break;
     }
-
     return 0;
 }
